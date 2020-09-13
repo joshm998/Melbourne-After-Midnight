@@ -16,9 +16,9 @@
 
 A custom, image-centric theme for Gatsby. Made for publishers and portfolios with plenty of graphics to show off to the world. Completely free and fully responsive, released under the MIT license.
 
-**Based on [London After Midnight](https://github.com/vaporwavy/gatsby-london-after-midnight) which is based on[London](https://github.com/ImedAdel/gatsby-london) for Gatsby**
+**Based on [London After Midnight](https://github.com/vaporwavy/gatsby-london-after-midnight) which is based on [London](https://github.com/ImedAdel/gatsby-london) for Gatsby**
 
-**Demo: 
+**Demo:** [https://melbourne-after-midnight.netlify.app](https://melbourne-after-midnight.netlify.app)
 
 ---
 
