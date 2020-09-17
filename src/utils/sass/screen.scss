@@ -434,6 +434,10 @@ body {
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
+.blog-post-card-content {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .post-card-date,
 .post-card-body,
 .post-card-tag-link {
@@ -467,6 +471,11 @@ body {
 .post-card-link:hover .post-card-content {
   opacity: 1;
   transition: opacity 0.3s cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+.blog-post-card-link:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
 .post-card-title {
