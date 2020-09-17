@@ -37,6 +37,7 @@ const BlogIndex = ({ data }, location) => {
               key={node.fields.slug}
               count={postCounter}
               node={node}
+              blogPost={true}
               postClass={`post`}
             />
           )

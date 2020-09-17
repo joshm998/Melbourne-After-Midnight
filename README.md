@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="80" />
+  <a href="https://melbourne-after-midnight.netlify.app">
+    <img alt="Gatsby" src="./content/assets/screenshot-desktop.png" />
   </a>
 </p>
 
@@ -24,10 +24,23 @@ A custom, image-centric theme for Gatsby. Made for publishers and portfolios wit
 
 ### Whats changed from London After Midnight?
 * SASS implemented instead of CSS
-
+* Netlify CMS Added
+* Blog Post Page Layout Changed
 ---
 
 _First time with Gatsby? Take a look on the [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+
+## 🚀 Deploying
+
+1.  **Use the Deploy to Netlfiy .**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```sh
+    cd my-awesome-portfolio/
+    gatsby develop
+    ```
+
 
 ## 🚀 Quick start
 

@@ -6,7 +6,7 @@ export default props => (
   <article
     className={`post-card ${props.count % 3 === 0 && `post-card-large`} ${
       props.postClass
-    } ${props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
+    } ${props.blogPost ? `no-image` : props.node.frontmatter.thumbnail ? `with-image` : `no-image`}`}
     style={
       props.node.frontmatter.thumbnail && {
         backgroundImage: `url(${
@@ -16,12 +16,38 @@ export default props => (
     }
   >
       {
+        props.blogPost ? (<ContentBlogPost props={props}/>) :
         props.node.frontmatter.thumbnail
           ?(<ContentWithImage props={props}/>)
           :(<ContentNoImage props={props}/>)
       }
   </article>
 )
+
+class ContentBlogPost extends Component {
+  render() {
+    const{props}=this.props;
+    return (
+      <Link to={props.node.fields.slug} className="post-card-link blog-post-card-link">
+      <div className="post-card-content blog-post-card-content">
+        <div>
+        <Tags tags={props.node.frontmatter.tags}/>
+        </div>
+        <div>
+        <Link to={props.node.fields.slug} className="post-card-link blog-post-card-link">
+          <h2 className="post-card-title">
+            {props.node.frontmatter.title || props.node.fields.slug}
+          </h2>
+        </Link>
+        </div>
+        <div className="post-card-date">
+        {props.node.frontmatter.date}
+        </div>
+      </div>
+      </Link>
+    );
+  }
+}
 
 class ContentNoImage extends Component {
   render() {
