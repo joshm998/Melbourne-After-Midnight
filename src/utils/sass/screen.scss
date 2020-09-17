@@ -569,7 +569,7 @@ body {
 }
 
 .post-content-excerpt {
-  margin: -2vw 0 3vw;
+  margin: 0;
   font-size: 2.2rem;
   line-height: 1.6em;
   color: $color-body-font;
@@ -581,6 +581,23 @@ body {
   .post-content-excerpt {
     font-size: 1.8rem;
   }
+}
+
+.post-content-date {
+  margin: -2vw 0 2vw;
+  font-size: 2.2rem;
+  line-height: 1.6em;
+  color: $color-body-font;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .post-content-excerpt {
+    font-size: 1.8rem;
+  }
+}
+
+.post-content-tags {
+  margin: 0 0 3vw !important;
 }
 
 .post-content-image {
